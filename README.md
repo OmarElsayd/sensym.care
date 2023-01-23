@@ -1,4 +1,4 @@
-# sensym2
+# sensym
 
 ****
 
