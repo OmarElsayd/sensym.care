@@ -6,6 +6,10 @@
 ![img.png](/static/system_desgin.png)
 
 ****
+### Git workflow
+![img.png](/static/git_workflow.png)
+
+****
 ### Create Python Environment
 ```bash 
 $ py -3.11 -m venv venv
