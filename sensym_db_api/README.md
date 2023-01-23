@@ -1,10 +1,14 @@
-# sensym2
+# Lecture-Quiz-Software
 
 ****
 
 ### Backend design workflow
-![img.png](/static/system_desgin.png)
+![img.png](../static/system_desgin.png)
 
+****
+### Git workflow
+
+![img.png](../static/git_workflow.png)
 ****
 ### Create Python Environment
 ```bash 
@@ -39,9 +43,9 @@ $ ./local/install_dependencies/sensym_db_models.sh
 ****
 
 
-database: sensym_care
+database:
 
-Schema: Voice_analysis
+Schema: Voice
 
 Tables:
 
@@ -50,7 +54,7 @@ users
 - name
 - email
 - password
-- role ENUM (e.g. "admin", 'doctor')
+- role (e.g. "admin", "user")
 
 recordings
 - id (primary key)
@@ -101,29 +105,5 @@ sessions
 - end_time
 - status (e.g. "active", "expired")
 
-
-![img.png](static/db.png)
-
-
-Focus on the file **matchRules.ipynb**. It contains the main code to analyze journals (see *Journals* folder)
-
-You can *commit* files to this repository directly from GitHub. This will be the repository for all our code.
-
-Check this: https://www.geeksforgeeks.org/plotting-various-sounds-on-graphs-using-python-and-matplotlib/
-
-## Python Requirements
-The SenSym2 project is supported on Python 3.9.10. Moreover, the following packages are required to run each component of the project:
-- General: sys, pprint, tabulate, array
-- MongoDB: pymongo
-- Django: python3-django
-- ML: tensorflow, pytorch
-- Math/Science: numpy, matplotlib, scikit-learn
-- Automation: pyautogui
-- Natural Language Processing: spacy, nltk
-- Keyword Extraction: rake_nltk
-- Image Processing: opencv-python (cv2), imutils
-- Sound Processing: wave
-- Voice & Speech Recognition: pyttsx3, speech_recognition
-- Data Visualization: wordcloud
-- Packages for WIP efforts: cmath, concurrent.futures, email.mime, multiprocessing, pyqtgraph, threading, struct, pyaudio, scipy, time, numba, subprocess, tkinter
+pip install alembic
 

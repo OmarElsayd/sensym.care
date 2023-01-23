@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Voice Recognition Report </h1>
+    <hr>
+    <h2 style="text-align: center;">Recording Script</h2>
+    <audio controls>
+    <source src="{{ Audio }}" type="audio/wav">
+    This document does not support wav files.
+    </audio>
+    <p style="text-align: center;">{{ Text }}</p>
+    <hr>
+    <h2 style="text-align: center;">Word Cloud Report</h2>
+    <img src="{{ WordCloud }}">
+    <hr>
+    <h2 style="text-align: center;">Voice Peaks Report</h2>
+    <img src="{{ Peaks }}" style="text-align: center;">
+    <hr>
+    <h2 style="text-align: center;">Detected Peaks time and words</h2>
+    <h3 style="text-align: center;"> [ Time : Word ] -> This feature will show you time peak accorded and what did the user say during that peak<br> </h3>
+    <p style=>{{JSONFILE}}</p>
+
+
+</body>
+</html>
