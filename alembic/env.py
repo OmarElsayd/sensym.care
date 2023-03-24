@@ -1,7 +1,7 @@
 from logging.config import fileConfig
 
 from alembic import context
-from sensym_db_api.sensym_models.voice_analysis_db import voice_db_models, base, db_engine
+from sensym_models.voice_analysis_db import voice_db_models, base, db_engine
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
