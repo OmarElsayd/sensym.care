@@ -1,0 +1,18 @@
+<div class="toolbar" role="banner">
+  <div class="ToolbardivText">
+    <span>WELCOME</span>
+  </div>
+  <img src="assets/SENSym.png" class="logo" alt="Sensem Logo">
+</div>
+<div class="recodiv">
+  <label class="text-label">{{VoiceEngine.transcript}}</label>
+  <button class="Button_login" (click)="start()">START</button>
+  <button class="Button_login" (click)="stop()">STOP</button>
+  <button class="Button_login" (click)="clear()">CLEAR</button>
+  <button class="Button_login" (click)="sendTextForAnalysis()">SUBMIT</button>
+</div>
+<div class="bottom_tool_bar">
+  <span class="title_version">{{title}} V {{version}}</span>
+  <span class="date_time">{{date}}</span>
+  <span class="time">{{time}}</span>
+</div>

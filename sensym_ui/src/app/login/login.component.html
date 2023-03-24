@@ -1,0 +1,21 @@
+<div class="toolbar" role="banner">
+    <div class="ToolbardivText">
+      <span>WELCOME</span>
+    </div>
+    <img src="assets\SENSym.png" class="logo" alt="Sensem Logo">
+  </div>
+  
+  <div class="TextBoxDive">
+    <input type="text" [(ngModel)]="first_name" class="TextBoxInput1" placeholder=" First Name" >
+    <input type="text" [(ngModel)]="last_name" class="TextBoxInput2" placeholder=" Last Name">
+    <button class="Button_login" (click)="start_session()">START</button>
+  </div>
+  
+  
+  <div class="bottom_tool_bar">
+    <span style="position: absolute; top: 18px; left: 15px;">{{title}} V {{version}}</span>
+    <span style="position: absolute; top: 25px; right: 30px;">{{date}}</span>
+    <span style="position: absolute; top: 10px; right: 15px;"> {{time}}</span>
+  </div>
+  
+  

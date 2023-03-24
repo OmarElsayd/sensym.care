@@ -115,6 +115,35 @@ You can *commit* files to this repository directly from GitHub. This will be the
 
 Check this: https://www.geeksforgeeks.org/plotting-various-sounds-on-graphs-using-python-and-matplotlib/
 
+
+****
+## Angular Build and Run
+
+- ### First make sure that you have Node v18.12.1 or newer installed:
+  - https://nodejs.org/en/download/
+- run ```node --version``` in your terminal to make sure you have installed it :
+
+- Once you have node, go ahead and install Angular CLI:
+```bash
+$ npm install -g @angular/cli
+```
+Note that if you are running this on Windows powershell, you will need to change ExecutionPolicy:
+```bash
+$ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+Once you get these done, you can run build and run the project:
+```bash
+$ cd lqs_ui
+```
+then
+```bash
+$ ng serve --open
+```
+Now you should see the following:
+
+![img.png](static/img.png)
+
 ## Python Requirements
 The SenSym2 project is supported on Python 3.9.10. Moreover, the following packages are required to run each component of the project:
 - General: sys, pprint, tabulate, array
