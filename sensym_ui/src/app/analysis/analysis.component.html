@@ -1,0 +1,41 @@
+<div class="page-container">
+  <header class="toolbar" role="banner">
+    <span class="ToolbardivText">WELCOME</span>
+    <img src="assets/SENSym.png" class="logo" alt="Sensem Logo">
+  </header>
+
+  <main class="content-container">
+    <section class="Analysis">
+      <div class="label-container">
+        <label class="text-label" id="analysis-label" #analysisLabelRef></label>
+        <label class="text-label" id="transcript-label" #transcriptLabelRef></label>
+        <mat-card class="recording-card">
+          <mat-card-title>Session Recording</mat-card-title>
+          <div class="audio-container">
+            <audio class="audio-player" controls [src]="recordingWave"></audio>
+          </div>
+        </mat-card>
+      </div>
+      <div class="image-wrapper">
+        <div class="image-container">
+          <h3 class="image-label">Recordings</h3>
+          <img [src]="RecPng" alt="Recordings" class="image">
+        </div>
+        <div class="image-container">
+          <h3 class="image-label">Peaks</h3>
+          <img [src]="PeaksPng" alt="Peaks" class="image">
+        </div>
+        <div class="image-container">
+          <h3 class="image-label">Emotion Analysis</h3>
+          <img [src]="emotionPng" alt="emo" class="image">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom_tool_bar">
+    <span class="title">{{title}} V {{version}}</span>
+    <span class="date">{{date}}</span>
+    <span class="time">{{time}}</span>
+  </footer>
+</div>

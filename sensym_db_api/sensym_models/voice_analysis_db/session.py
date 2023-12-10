@@ -12,6 +12,8 @@ def set_session() -> sessionmaker:
     session = sessionmaker(bind=engine)
     return session
 
+engine = create_db_engine()
+LocalSession = sessionmaker(bind=engine)
 
 
 

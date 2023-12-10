@@ -14,5 +14,12 @@ setuptools.setup(
         "uvicorn",
         "alembic",
         "psycopg2",
+        "pyaudio",
+        "python-dotenv",
+        "librosa",
+        "matplotlib",
+        "nltk",
+        "textblob",
+        "transformers"
         ]
     )
